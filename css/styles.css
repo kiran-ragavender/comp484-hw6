@@ -5,6 +5,7 @@
 # - #d06a43  terracotta     (accent / links)
 # - #e9c79a  soft gold      (accent on dark backgrounds)
 # - #5b6478  slate          (secondary text)
+# - #ffffff  white          (skills)
 */
 
 :root {
@@ -164,11 +165,14 @@ footer p {
     background: var(--paper);
 }
 
-.work h3 {
+.work h3,
+.projects h3,
+.skills h3 {
     margin-top: 1.6em;
 }
 
 .work .company,
+.projects .company,
 .education .degree {
     margin-top: 0;
     margin-bottom: 0;
@@ -176,7 +180,8 @@ footer p {
     color: var(--terracotta);
 }
 
-.work .date {
+.work .date,
+.education .date {
     margin-top: 0;
     margin-bottom: 1em;
     font-size: 0.85rem;
@@ -211,4 +216,75 @@ footer p {
 
 .education p {
     color: var(--ink);
+}
+
+.education .cert-list {
+    columns: 2 280px;
+    column-gap: 40px;
+    padding-left: 1.2em;
+    font-size: 0.95rem;
+}
+
+.education .cert-list li {
+    break-inside: avoid;
+    margin-bottom: 0.4em;
+}
+
+.education .cert-list li::marker {
+    color: var(--terracotta);
+}
+
+
+/* Projects
+------------------------------------*/
+.projects {
+    background: var(--sand);
+}
+
+.projects .company {
+    font-size: 0.9rem;
+    margin-bottom: 0.6em;
+}
+
+.projects p {
+    margin-top: 0;
+}
+
+
+/* Skills
+------------------------------------*/
+.skills {
+    background: #ffffff;
+}
+
+.skills h3 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--slate);
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-list li {
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1px solid var(--sand);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Small tagline under the header summary */
+header .tags {
+    margin-top: 1.2em;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--gold);
 }
