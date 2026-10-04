@@ -103,8 +103,8 @@ footer {
 
 header img {
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid var(--gold);
