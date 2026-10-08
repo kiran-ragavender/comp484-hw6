@@ -1,6 +1,7 @@
 /* Color Palette
 # - #1b2238  midnight navy  (header & footer)
-# - #f7f5f0  warm paper     (work experience)
+# - #f7f5f0  warm paper     (page background)
+# - #e6ebf2  mist           (work experience)
 # - #ece5d8  sand           (education)
 # - #d06a43  terracotta     (accent / links)
 # - #e9c79a  soft gold      (accent on dark backgrounds)
@@ -11,6 +12,7 @@
 :root {
     --navy: #1b2238;
     --paper: #f7f5f0;
+    --mist: #e6ebf2;
     --sand: #ece5d8;
     --terracotta: #d06a43;
     --gold: #e9c79a;
@@ -162,7 +164,7 @@ footer p {
 /* Work Experience
 ------------------------------------*/
 .work {
-    background: var(--paper);
+    background: var(--mist);
 }
 
 .work h3,
